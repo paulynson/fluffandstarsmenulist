@@ -1,115 +1,11 @@
-// const menuData = {
-//   appetizers: [
-//     {
-//       name: "Crispy Calamari",
-//       description: "Golden-fried calamari with zesty marinara sauce",
-//       price: "$8.99",
-//       image:
-//         "https://images.unsplash.com/photo-1576743364319-101b5f7257e5?w=500&h=500&fit=crop",
-//     },
-//     {
-//       name: "Truffle Bruschetta",
-//       description: "Toasted bread with truffle oil and fresh tomatoes",
-//       price: "$7.50",
-//       image:
-//         "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=500&h=500&fit=crop",
-//     },
-//   ],
-//   "main-course": [
-//     {
-//       name: "Grilled Salmon",
-//       description: "Atlantic salmon with herb crust and seasonal vegetables",
-//       price: "$22.99",
-//       image:
-//         "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&h=500&fit=crop",
-//     },
-//     {
-//       name: "Vegetarian Risotto",
-//       description: "Creamy arborio rice with wild mushrooms",
-//       price: "$18.50",
-//       image:
-//         "https://images.unsplash.com/photo-1595475207225-428b62bda831?w=500&h=500&fit=crop",
-//     },
-//   ],
-//   desserts: [
-//     {
-//       name: "Chocolate Lava Cake",
-//       description: "Warm chocolate cake with vanilla ice cream",
-//       price: "$9.99",
-//       image:
-//         "https://images.unsplash.com/photo-1606188095970-4fe5bc3e74bd?w=500&h=500&fit=crop",
-//     },
-//     {
-//       name: "Tiramisu",
-//       description: "Classic Italian coffee-flavored dessert",
-//       price: "$7.99",
-//       image:
-//         "https://images.unsplash.com/photo-1590841767916-2cec208a4d6d?w=500&h=500&fit=crop",
-//     },
-//   ],
-//   beverages: [
-//     {
-//       name: "Craft Cocktail",
-//       description: "Seasonal mixed drink with premium spirits",
-//       price: "$12.50",
-//       image:
-//         "https://images.unsplash.com/photo-1601066525716-058a0bd36e91?w=500&h=500&fit=crop",
-//     },
-//     {
-//       name: "Fresh Pressed Juice",
-//       description: "Organic mixed fruit and vegetable juice",
-//       price: "$6.99",
-//       image:
-//         "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=500&h=500&fit=crop",
-//     },
-//   ],
-// };
-
-// function renderMenuItems(category) {
-//   const menuGrid = document.getElementById("menuGrid");
-//   menuGrid.innerHTML = "";
-
-//   menuData[category].forEach((item) => {
-//     const menuItemElement = document.createElement("div");
-//     menuItemElement.classList.add("menu-item");
-//     menuItemElement.innerHTML = `
-//             <img src="${item.image}" alt="${item.name}">
-//             <div class="menu-item-details">
-//                 <h3>${item.name}</h3>
-//                 <p>${item.description}</p>
-//                 <div class="price">${item.price}</div>
-//             </div>
-//         `;
-//     menuGrid.appendChild(menuItemElement);
-//   });
-// }
-
-// // Initial render
-// renderMenuItems("appetizers");
-
-// // Category selection
-// document.getElementById("categoryList").addEventListener("click", function (e) {
-//   const selectedCategory = e.target.closest("li");
-//   if (selectedCategory) {
-//     // Remove active class from all categories
-//     this.querySelectorAll("li").forEach((li) => li.classList.remove("active"));
-
-//     // Add active class to selected category
-//     selectedCategory.classList.add("active");
-
-//     // Render menu items for selected category
-//     renderMenuItems(selectedCategory.dataset.category);
-//   }
-// });
-
 const menuData = {
   appetizers: [
     {
       name: "Crispy Calamari",
       description: "Golden-fried calamari with zesty marinara sauce",
-      price: "$8.99",
+      price: "₦8,000.99",
       image:
-        "https://images.unsplash.com/photo-1576743364319-101b5f7257e5?w=500&h=500&fit=crop",
+        "https://img.freepik.com/free-photo/fried-squid-calamari-rings_1339-4720.jpg?t=st=1743161732~exp=1743165332~hmac=4f9c701ac08d735d0f48bdb58d9177fe268060092fe607e1ba2d7ae0a1d8667a&w=900",
       ingredients: [
         "Fresh squid rings",
         "All-purpose flour",
@@ -126,9 +22,9 @@ const menuData = {
     {
       name: "Truffle Bruschetta",
       description: "Toasted bread with truffle oil and fresh tomatoes",
-      price: "$7.50",
+      price: "₦7,000.50",
       image:
-        "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=500&h=500&fit=crop",
+        "https://img.freepik.com/free-photo/slices-bruschetta-basil-leaf_23-2148698648.jpg?t=st=1743161785~exp=1743165385~hmac=3538db32a5f0ea0827d4027438db5056b35d46ae3db33d643081a775b486f7e6&w=740",
       ingredients: [
         "Artisan sourdough bread",
         "Fresh cherry tomatoes",
@@ -143,11 +39,72 @@ const menuData = {
         "Sourdough bread is toasted to perfection, rubbed with garlic, topped with diced fresh tomatoes, and drizzled with truffle oil and fresh basil.",
     },
   ],
+  "shawarma-and-the-likes": [
+    {
+      name: "Chicken Shawarma",
+      description:
+        "Grilled chicken wrapped in pita with garlic sauce and veggies",
+      price: "₦5,500.99",
+      image:
+        "https://img.freepik.com/free-photo/shawarma-wrap-with-chicken-vegetables-dark-background_2829-10748.jpg?w=900",
+      ingredients: [
+        "Marinated chicken",
+        "Pita bread",
+        "Garlic sauce",
+        "Cabbage",
+        "Tomatoes",
+        "Cucumber",
+        "Pickles",
+        "Paprika",
+      ],
+      preparation:
+        "Juicy marinated chicken is grilled and wrapped in soft pita bread with fresh veggies and creamy garlic sauce.",
+    },
+    {
+      name: "Beef Shawarma",
+      description: "Sliced beef in a warm pita with tahini sauce and pickles",
+      price: "₦6,000.99",
+      image:
+        "https://img.freepik.com/free-photo/beef-shawarma-wrap-served-with-tahini_123827-21273.jpg?w=900",
+      ingredients: [
+        "Marinated beef",
+        "Pita bread",
+        "Tahini sauce",
+        "Lettuce",
+        "Onions",
+        "Tomatoes",
+        "Pickles",
+        "Cumin",
+      ],
+      preparation:
+        "Thinly sliced beef is grilled to perfection, then wrapped in a pita with a creamy tahini sauce and fresh vegetables.",
+    },
+    {
+      name: "Falafel Wrap",
+      description: "Crispy falafel balls with hummus and fresh veggies in pita",
+      price: "₦5,000.99",
+      image:
+        "https://img.freepik.com/free-photo/falafel-wrap-with-lettuce-hummus-dark-background_2829-11997.jpg?w=900",
+      ingredients: [
+        "Chickpeas",
+        "Garlic",
+        "Cumin",
+        "Coriander",
+        "Pita bread",
+        "Hummus",
+        "Tomatoes",
+        "Lettuce",
+        "Cucumber",
+      ],
+      preparation:
+        "Golden-fried falafel balls are wrapped in a warm pita with creamy hummus and fresh veggies for a delicious vegetarian delight.",
+    },
+  ],
   "main-course": [
     {
       name: "Grilled Salmon",
       description: "Atlantic salmon with herb crust and seasonal vegetables",
-      price: "$22.99",
+      price: "₦2,200.99",
       image:
         "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&h=500&fit=crop",
       ingredients: [
@@ -167,9 +124,9 @@ const menuData = {
     {
       name: "Vegetarian Risotto",
       description: "Creamy arborio rice with wild mushrooms",
-      price: "$18.50",
+      price: "₦1,800.50",
       image:
-        "https://images.unsplash.com/photo-1595475207225-428b62bda831?w=500&h=500&fit=crop",
+        "https://img.freepik.com/free-photo/risotto-with-asparagus-beans-zucchini-green-peas_2829-11776.jpg?t=st=1743161639~exp=1743165239~hmac=a797b9adc073398809cbea526629593d58012dc00cb5119e4120be1aef91988f&w=996",
       ingredients: [
         "Arborio rice",
         "Mixed wild mushrooms",
@@ -190,9 +147,9 @@ const menuData = {
     {
       name: "Chocolate Lava Cake",
       description: "Warm chocolate cake with vanilla ice cream",
-      price: "$9.99",
+      price: "₦9,000.99",
       image:
-        "https://images.unsplash.com/photo-1606188095970-4fe5bc3e74bd?w=500&h=500&fit=crop",
+        "https://img.freepik.com/free-photo/front-view-delicious-chocolate-cakes-with-fresh-red-strawberries-light-white-surface-chocolate-sugar-biscuit-sweet-cake-bake-cookies_140725-52845.jpg?t=st=1743161493~exp=1743165093~hmac=a94babf205abfdb4c2b08fd74bdb0cbcf24694db152b57260788f06b652aef1a&w=996",
       ingredients: [
         "Dark chocolate",
         "Unsalted butter",
@@ -209,9 +166,9 @@ const menuData = {
     {
       name: "Tiramisu",
       description: "Classic Italian coffee-flavored dessert",
-      price: "$7.99",
+      price: "₦7,000.99",
       image:
-        "https://images.unsplash.com/photo-1590841767916-2cec208a4d6d?w=500&h=500&fit=crop",
+        "https://img.freepik.com/free-photo/tasty-homemade-tiramisu-cake_114579-85350.jpg?t=st=1743161552~exp=1743165152~hmac=022fbdccbcfdf4d89896e57f0147879a6a6d1d9f969954de7008d32b4a75d5f4&w=996",
       ingredients: [
         "Mascarpone cheese",
         "Heavy cream",
@@ -230,9 +187,9 @@ const menuData = {
     {
       name: "Craft Cocktail",
       description: "Seasonal mixed drink with premium spirits",
-      price: "$12.50",
+      price: "₦11,200.50",
       image:
-        "https://images.unsplash.com/photo-1601066525716-058a0bd36e91?w=500&h=500&fit=crop",
+        "https://img.freepik.com/free-photo/close-up-pink-cocktail-placed-glass-with-ice-dark-basil-leaves_141793-2047.jpg?t=st=1743161431~exp=1743165031~hmac=e3ca1031c3a2d6a30d604561c7d7cfae3752d5bb2bf5432d2cb524748d3fc18c&w=740",
       ingredients: [
         "Premium gin or vodka",
         "Fresh seasonal fruits",
@@ -247,7 +204,7 @@ const menuData = {
     {
       name: "Fresh Pressed Juice",
       description: "Organic mixed fruit and vegetable juice",
-      price: "$6.99",
+      price: "₦6000.99",
       image:
         "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=500&h=500&fit=crop",
       ingredients: [
