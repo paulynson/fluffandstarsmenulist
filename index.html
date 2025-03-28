@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluff and Stars Menu</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="wrapper">
+        <h1 class="header">Fluff and Stars Menus</h1>
+      </div>
+      <div class="menu-container">
+        <!-- Menu Page -->
+        <div class="page active" id="menuPage">
+          <div class="menu-categories">
+            <h2>Our Menu</h2>
+            <ul class="category-list" id="categoryList">
+              <li data-category="appetizers" class="active">Appetizers</li>
+              <li data-category="main-course">Main Course</li>
+              <li data-category="desserts">Desserts</li>
+              <li data-category="beverages">Beverages</li>
+            </ul>
+          </div>
+          <div class="menu-items" id="menuItems">
+            <div class="menu-grid" id="menuGrid"></div>
+          </div>
+        </div>
+
+        <!-- Ingredient Details Page -->
+        <div class="page ingredient-page" id="ingredientPage">
+          <button class="back-button" id="backButton">← Back to Menu</button>
+          <div class="ingredient-details" id="ingredientDetails"></div>
+        </div>
+      </div>
+      <div class="contact">
+        <p class="">✉️ : <span>info@fluffandstars.com</span></p>
+        <p class="">📞 : <span>01-23456789-10</span></p>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
